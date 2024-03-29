@@ -1,0 +1,261 @@
+/*css for navbar and logo*/
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logoContainer{
+    width: auto;
+    height: 130px;
+    background-color: white;
+}
+.logo{
+    float: left;
+}
+#globalLogoContainer{
+    width: 200px;
+    height: 130px;
+    margin-right: auto;
+    overflow: hidden;
+}
+#unLogoContainer{
+    width: 200px;
+    height: 130px;
+    margin-left: 1490px;
+    overflow: hidden;
+}
+
+.logoContainer img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+/*css for team*/
+.person{
+    width: 250px;
+    height: 309px;
+    float: left;
+    
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;       /* Ensure content doesn't overflow */
+    position: relative;   /* Needed for absolute positioning */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for scaling and box-shadow */
+    margin-left: 80px;
+    margin-top: 80px;
+    
+
+}
+.imageBlock{
+    
+    width: 100%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    
+}
+.person img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.personContainer{
+    
+    margin: 0 auto;
+    height: 500px;
+    width: 1400px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px; line-height: 1; text-align: center;
+}
+
+.person:hover{
+    transform: scale(1.3);
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+.personDetails{
+    
+    display: none;  /* Initially hidden */
+    position: absolute;           /* Position it relative to the person block */
+    
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);   /* Semi-transparent white background */
+    padding: 10px;
+    
+    transition: opacity 0.3s; /* Transition for opacity */
+}
+.person:hover .personDetails{
+    display: block;  /* Show details on hover */
+    
+}
+
+
+
+/* css for user profile*/
+
+button, input[type="button"]{
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underlines */
+    display: inline-block; /* Make sure buttons are displayed inline */
+    font-size: 16px; /* Font size */
+    margin: 5px; /* Add some margin around buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 35px;
+    width: 100px;
+    height: 35px;
+}
+.mainContainer {
+    width: 600px; 
+    height: 280px; 
+    border: 1px solid #999; 
+    border-radius: 30px; 
+    padding: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.questionWindow {
+    height: 100px; 
+    width: 500px; 
+    border: 1px solid #999; 
+    border-radius: 15px;
+    padding: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.answerContainer{
+    height: 50px; 
+    width: 400px; 
+    border: 1px solid #999; 
+    border-radius: 15px;
+    padding: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.userInput{
+    height: 40px;
+    width: 350px;
+    border: 1px solid #999;
+    margin-left: 60px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.stepIndicator{
+    padding: 7px;
+    padding-left: 20px;
+}
+.nextAndSkipContainer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 250px;
+    background-color: #f9f9f9; 
+}
+button, input[type="button"], .next{
+    margin-left: 15px;
+}
+.startButtonContainer{
+    margin-left: 880px;
+    margin-right: auto;
+}
+.userDetails{
+    width: 390px;
+    height: 650px;
+    background-color: black;
+    border-radius: 15px;
+    background-color: #999;
+    position: absolute;
+    top: 60%; /* Place it 50% from the top */
+    right: 12%; /* Place it 50% from the right */
+    transform: translate(50%, -50%);
+}
+.userDetails p{
+    margin-bottom: 10px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+.categoryLine{
+    border-top: 2px solid #2b9f2e;
+    margin-bottom: 10px;
+    
+}
+.statusBar {
+    height: 20px; /* Set the height of the status bar */
+    background-color: #96a097; /* Green color for the status bar */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 10px; /* Add margin for spacing */
+    width: 200px;
+    position: absolute;
+    top: 84%; /* Place it 50% from the top */
+    right: 50%; /* Place it 50% from the right */
+    transform: translate(50%, -50%);
+}
+
+.completedPercentage {
+    text-align: center; /* Center the text horizontally */
+    color: #2fbd4e; /* White text color */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    margin-top: 5px; /* Add margin for spacing */
+}
+
+
+
