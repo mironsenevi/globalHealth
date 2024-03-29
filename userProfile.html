@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ourTeam.css">
+</head>
+<body>
+    <div class="logoContainer">
+        <div class="logo" id="globalLogoContainer"><img src="Picsart_24-03-28_21-25-56-169.jpg" alt="Global health logo"></div>
+        <div class="logo" id="unLogoContainer"><img src="UN United Nations.png" alt=""></div>
+    </div>
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="ourTeam.html">About us</a>
+        <a href="#">Gallery</a>
+        <a href="#">Shop</a>
+    </div>
+    
+
+    <h1>Build user profile</h1>
+    <div class="startButtonContainer"><button id="startButton" class="start">Start</button></div>
+
+    <div class="mainContainer" style="display: none;">
+        <div class="stepIndicator" id="stepIndicator"></div>
+        <div class="questionWindow">
+            <div class="questionContainer" id="questionContainer"></div>
+            <input type="text" id="userInput" class="userInput">
+        </div>
+        
+        <div class="nextAndSkipContainer">
+            <input type="button" class="skip" value="Skip" id="skipButton">
+            <input type="button" class="next" value="Next" id="nextButton">
+        </div>
+    </div>
+
+    <div class="completedStatus">
+        <p class="statusInWord">Profile completed <div class="completedPercentage"></div></p>
+        <div class="statusBar"></div>
+    </div>
+
+    <div class="userDetails" style="display: none;"></div>
+    <script src="userProfile.js"></script>
+</body>
+</html>
